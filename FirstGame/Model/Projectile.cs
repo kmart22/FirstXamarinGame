@@ -37,7 +37,7 @@ namespace FirstGame.Model
 		float projectileMoveSpeed;
 
 
-		public void Initialize(Viewport viewport, Texture2D texture, Vector2 position)
+		public void Initialize(Viewport viewport, Texture2D texture, Vector2 position, int weapon)
 		{
 			Texture = texture;
 			Position = position;
@@ -45,9 +45,17 @@ namespace FirstGame.Model
 
 			Active = true;
 
-			Damage = 2;
+			if (weapon == 1)
+			{
+				Damage = 2;
+				projectileMoveSpeed = 20f;
+			}
+			else
+			{
+				Damage = 10;
+				projectileMoveSpeed = 15f;
+			}
 
-			projectileMoveSpeed = 20f;
 		}
 
 		public void Update()

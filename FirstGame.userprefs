@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="FirstGame/Controller/SpaceGame.cs">
     <Files>
       <File FileName="FirstGame/Model/Player.cs" Line="57" Column="32" />
-      <File FileName="FirstGame/Controller/SpaceGame.cs" Line="155" Column="1" />
+      <File FileName="FirstGame/Controller/SpaceGame.cs" Line="168" Column="4" />
       <File FileName="FirstGame/Controller/Program.cs" Line="30" Column="1" />
       <File FileName="FirstGame/View/Animation.cs" Line="7" Column="25" />
       <File FileName="FirstGame/View/ParallaxingBackground.cs" Line="21" Column="1" />
