@@ -146,9 +146,8 @@ namespace FirstGame.Controller
 
 				enemyTexture = Content.Load<Texture2D>("Animation/mineAnimation");
 
-				projectileTexture = Content.Load<Texture2D>("Texture/laser");
+				projectileTexture = Content.Load<Texture2D>("Texture/missile");
 				projectileTexture2 = Content.Load<Texture2D>("Texture/bird");
-
 
 				explosionTexture = Content.Load<Texture2D>("Animation/explosion");
 
@@ -208,32 +207,32 @@ namespace FirstGame.Controller
 				player.Position.Y -= currentGamePadState.ThumbSticks.Left.Y * playerMoveSpeed;
 
 				// Use the Keyboard / Dpad
-				if (currentKeyboardState.IsKeyDown(Keys.A) ||
+				if (currentKeyboardState.IsKeyDown(Keys.Left) ||
 				currentGamePadState.DPad.Left == ButtonState.Pressed)
 				{
 					player.Position.X -= playerMoveSpeed;
 				}
-				if (currentKeyboardState.IsKeyDown(Keys.D) ||
+				if (currentKeyboardState.IsKeyDown(Keys.Right) ||
 				currentGamePadState.DPad.Right == ButtonState.Pressed)
 				{
 					player.Position.X += playerMoveSpeed;
 				}
-				if (currentKeyboardState.IsKeyDown(Keys.W) ||
+				if (currentKeyboardState.IsKeyDown(Keys.Up) ||
 				currentGamePadState.DPad.Up == ButtonState.Pressed)
 				{
 					player.Position.Y -= playerMoveSpeed;
 				}
-				if (currentKeyboardState.IsKeyDown(Keys.S) ||
+				if (currentKeyboardState.IsKeyDown(Keys.Down) ||
 				currentGamePadState.DPad.Down == ButtonState.Pressed)
 				{
 					player.Position.Y += playerMoveSpeed;
 				}
 
-				if (currentKeyboardState.IsKeyDown(Keys.Z))
+				if (currentKeyboardState.IsKeyDown(Keys.Space))
 				{
 					this.weapon = 1;
 				}
-				if (currentKeyboardState.IsKeyDown(Keys.X))
+				if (currentKeyboardState.IsKeyDown(Keys.RightWindows))
 				{
 					this.weapon = 2;
 				}
@@ -437,7 +436,7 @@ namespace FirstGame.Controller
 					Projectile projectile = new Projectile();
 					projectile.Initialize(GraphicsDevice.Viewport, projectileTexture, position, weapon);
 					projectiles.Add(projectile);
-					fireTime = TimeSpan.FromSeconds(.15f);
+					fireTime = TimeSpan.FromSeconds(.25f);
 				}
 				else if (this.weapon == 2)
 				{

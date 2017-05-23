@@ -47,8 +47,8 @@ namespace FirstGame.Model
 
 			if (weapon == 1)
 			{
-				Damage = 2;
-				projectileMoveSpeed = 20f;
+				Damage = 3;
+				projectileMoveSpeed = 15f;
 			}
 			else
 			{

@@ -3,13 +3,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="FirstGame/Controller/SpaceGame.cs">
     <Files>
       <File FileName="FirstGame/Model/Player.cs" Line="57" Column="32" />
-      <File FileName="FirstGame/Controller/SpaceGame.cs" Line="168" Column="4" />
+      <File FileName="FirstGame/Controller/SpaceGame.cs" Line="150" Column="66" />
       <File FileName="FirstGame/Controller/Program.cs" Line="30" Column="1" />
       <File FileName="FirstGame/View/Animation.cs" Line="7" Column="25" />
       <File FileName="FirstGame/View/ParallaxingBackground.cs" Line="21" Column="1" />
       <File FileName="FirstGame/Content/Content.mgcb" Line="1" Column="1" />
       <File FileName="FirstGame/Model/Enemy.cs" Line="4" Column="22" />
-      <File FileName="FirstGame/Model/Projectile.cs" Line="67" Column="4" />
+      <File FileName="FirstGame/Model/Projectile.cs" Line="42" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
